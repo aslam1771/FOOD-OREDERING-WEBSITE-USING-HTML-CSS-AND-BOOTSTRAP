@@ -1,0 +1,29 @@
+.slide {
+    width: auto;    /* keeps original width or you can set it to 500px */
+    height: 700px;  /* sets height to 500px */
+    object-fit: cover; /* ensures the image covers the area without distortion */
+}
+.carousel-item {
+    position: relative; /* make parent relative */
+}
+
+.carousel-caption-text {
+    position: absolute; /* place on top of image */
+    bottom: 40px;       /* at bottom */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+
+    padding: 10px;
+    font-size: 28px;
+    margin: 0;
+}
+.gradient-text {
+    background: linear-gradient(to right, black, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+

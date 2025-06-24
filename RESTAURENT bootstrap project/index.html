@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TASTY FOODS</title>
+  <link rel="stylesheet" href="/css/bootstrap.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    /* extra style to position the map bottom-right */
+    .map-small {
+      width: 300px;
+      height: 200px;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      border: 2px solid white;
+    }
+    .footer-container {
+      position: relative;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <a class="navbar-brand text-white fw-bold" href="#">TASTY FOODS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#order">ORDERS</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          DEALS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LOCATION</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 slide" src="./IMAGES/FOOD1.jpg" alt="First slide" />
+      <h5 class="carousel-caption-text">MALABAR STYLE</h5>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 slide" src="./IMAGES/FOOD2.jpg" alt="Second slide" />
+      <h5 class="carousel-caption-text">HYDERABAD FOODS</h5>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 slide" src="./IMAGES/FOOD 3.jpg" alt="Third slide" />
+      <h5 class="carousel-caption-text">NORTH-INDIAN</h5>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Food Order Section -->
+<div class="container" id="order">
+  <h1 class="text-center gradient-text"><b>ORDER YOUR FOOD</b></h1>
+  <div class="row my-2">
+    <!-- Cards -->
+    <!-- Card 1 -->
+    <div class="col-4 mb-4">
+      <div class="card h-100 text-center border-2 border-warning">
+        <img src="./IMAGES/biriyani.jpg" class="card-img-top" alt="Biriyani" />
+        <div class="card-body">
+          <h5 class="card-title">BIRIYANI</h5>
+          <p class="card-text">TASTY CHICKEN BIRIYANI.</p>
+          <a href="#" class="btn btn-primary">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-4 mb-4">
+      <div class="card h-100 text-center border-2 border-warning">
+        <img src="./IMAGES/burger.jpg" class="card-img-top" alt="Burger" />
+        <div class="card-body">
+          <h5 class="card-title">BURGER</h5>
+          <p class="card-text">TASTY CHICKEN BURGER.</p>
+          <a href="#" class="btn btn-primary">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-4 mb-4">
+      <div class="card h-100 text-center border-2 border-warning">
+        <img src="./IMAGES/cakes.jpg" class="card-img-top" alt="Desserts" />
+        <div class="card-body">
+          <h5 class="card-title">DESSERTS</h5>
+          <p class="card-text">SWEET ARABIAN DESSERTS.</p>
+          <a href="#" class="btn btn-primary">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second row of cards -->
+  <div class="row my-2">
+    <!-- Card 4 -->
+    <div class="col-4 mb-4">
+      <div class="card h-100 text-center border-2 border-warning">
+        <img src="./IMAGES/frenchfries.jpg" class="card-img-top" alt="French Fries" />
+        <div class="card-body">
+          <h5 class="card-title">FRENCH FRIES</h5>
+          <p class="card-text">GRAB YOUR FRENCHFRIES NOW.</p>
+          <a href="#" class="btn btn-primary">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="col-4 mb-4">
+      <div class="card h-100 text-center border-2 border-warning">
+        <img src="./IMAGES/idly.jpg" class="card-img-top" alt="Idly" />
+        <div class="card-body">
+          <h5 class="card-title">IDLY</h5>
+          <p class="card-text">SPECIAL KERALA CUISINE.</p>
+          <a href="#" class="btn btn-primary">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="col-4 mb-4">
+      <div class="card h-100 text-center border-2 border-warning">
+        <img src="./IMAGES/samoosa.jpg" class="card-img-top" alt="Samoosa" />
+        <div class="card-body">
+          <h5 class="card-title">SAMOOSA</h5>
+          <p class="card-text">SPECIAL SNACKS JUST FOR U.</p>
+          <a href="#" class="btn btn-primary">ORDER NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<div class="container-fluid bg-warning footer-container">
+  <h1 class="text-center">LOCATION</h1>
+  <div class="row">
+    <div class="col-md-6 text-white">
+      <h1>TASTY FOODS RESTAURANT</h1>
+      <h4>Kochi</h4>
+      <h4>Kerala</h4>
+      <p>8593936973</p>
+      <p>tasty@gmail.com</p>
+      <p>tastyfoods.com</p>
+    </div>
+  </div>
+
+  <!-- Small map at bottom right -->
+  <iframe class="map-small" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5566.048392131027!2d76.32357957321949!3d10.042096912583048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c377917e985%3A0xb0fd4b1e85a6e51f!2sCochin%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1750780291850!5m2!1sen!2sin"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="/js/bootstrap.js"></script>
+
+</body>
+</html>
